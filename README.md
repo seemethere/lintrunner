@@ -16,6 +16,15 @@ The design of `lintrunner` is heavily inspired by `linttool`, a project that exi
 pip install lintrunner
 ```
 
+### LSP Server (Optional)
+For real-time linting in your editor, you can also build the LSP server:
+
+```bash
+cargo build --features lsp --bin lintrunner-lsp
+```
+
+See the [LSP documentation](src/lsp/README.md) for editor setup instructions.
+
 ## Usage
 First, you need to add a configuration file to your repo. See the [Linter
 configuration](#linter-configuration) section for more info.

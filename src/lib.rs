@@ -21,6 +21,8 @@ pub mod lint_config;
 pub mod lint_message;
 pub mod linter;
 pub mod log_utils;
+#[cfg(feature = "lsp")]
+pub mod lsp;
 pub mod path;
 pub mod persistent_data;
 pub mod rage;
